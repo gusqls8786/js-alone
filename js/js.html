@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">응애</p>
+        <button id="close">닫기</button>
+    </div>
+
+    <button onclick="idbox()">버튼1</button>
+    <button onclick="psbox()">버튼2</button>
+
+    <script>
+       function idbox()
+       {
+            document.getElementById('title').innerHTML = '아이디를 입력하시오'
+            document.getElementById('alert').style.display = 'block';
+       }
+
+       function psbox()
+       {
+            document.getElementById('title').innerHTML = '비밀번호를 입력하시오'
+            document.getElementById('alert').style.display = 'b lock';
+       }
+
+       document.getElementById('close').addEventListener('click', function(){
+        document.getElementById('alert').style.display = 'none'
+       });
+
+    
+
+    </script>
+</body>
+</html>
